@@ -1,5 +1,5 @@
 /**
- *    Copyright ${license.git.copyrightYears} the original author or authors.
+ *    Copyright 2006-2020 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -88,7 +88,7 @@ public class JavaTypeResolverDefaultImpl implements JavaTypeResolver {
         typeMap.put(Types.LONGVARBINARY, new JdbcTypeInformation(
                 "LONGVARBINARY", //$NON-NLS-1$
                 new FullyQualifiedJavaType("byte[]"))); //$NON-NLS-1$
-        typeMap.put(Types.LONGVARCHAR, new JdbcTypeInformation("LONGVARCHAR", //$NON-NLS-1$
+        typeMap.put(Types.LONGVARCHAR, new JdbcTypeInformation("VARCHAR", //$NON-NLS-1$
                 new FullyQualifiedJavaType(String.class.getName())));
         typeMap.put(Types.NCHAR, new JdbcTypeInformation("NCHAR", //$NON-NLS-1$
                 new FullyQualifiedJavaType(String.class.getName())));
